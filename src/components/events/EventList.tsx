@@ -1,5 +1,6 @@
-import { getFeaturedEvents } from '../../dummy-data';
+import { getFeaturedEvents } from '../../../dummy-data';
 import EventItem from './EventItem';
+import classes from './EventList.module.css';
 
 type EventListProps = {
   items: ReturnType<typeof getFeaturedEvents>;
@@ -7,7 +8,7 @@ type EventListProps = {
 
 function EventList({ items }: EventListProps): JSX.Element {
   return (
-    <ul>
+    <ul className={classes.list}>
       {items.map((event) => (
         <EventItem key={event.id} item={event} />
       ))}
