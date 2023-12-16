@@ -18,5 +18,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const featuredEvents: EventType[] = await getFeaturedEvents();
   return {
     props: { events: featuredEvents },
+    revalidate: 1800,
   };
 };
