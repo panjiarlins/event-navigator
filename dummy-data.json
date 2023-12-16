@@ -1,0 +1,52 @@
+{
+  "events": {
+    "e1": {
+      "title": "Advanced Python Workshop",
+      "description": "Take your Python skills to the next level! This workshop will cover advanced topics in Python programming.",
+      "location": "Techroad 45, 54321 New Techcity",
+      "date": "2023-12-15",
+      "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159",
+      "isFeatured": true
+    },
+    "e2": {
+      "title": "JavaScript for Beginners",
+      "description": "New to JavaScript? Join us in this event to learn the fundamentals of JavaScript, the most popular programming language for web development.",
+      "location": "Code Avenue 67, 67890 Codeville",
+      "date": "2023-12-20",
+      "image": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3",
+      "isFeatured": false
+    },
+    "e3": {
+      "title": "Data Science with R",
+      "description": "Interested in Data Science? This event will introduce you to data manipulation, analysis and visualization with R.",
+      "location": "Data Street 89, 98765 Dataland",
+      "date": "2024-01-10",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      "isFeatured": true
+    },
+    "e4": {
+      "title": "Intro to Machine Learning",
+      "description": "Dive into the world of Machine Learning in this introductory event. No prior experience required!",
+      "location": "AI Lane 32, 23456 AI Town",
+      "date": "2024-01-15",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+      "isFeatured": false
+    },
+    "e5": {
+      "title": "Web Development with React",
+      "description": "Learn how to build dynamic web applications using React. Basic knowledge of JavaScript is recommended for this event.",
+      "location": "Web Street 78, 87654 Web City",
+      "date": "2024-01-20",
+      "image": "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4",
+      "isFeatured": true
+    },
+    "e6": {
+      "title": "Mastering Git and GitHub",
+      "description": "Want to manage your code efficiently? This event will teach you how to use Git and GitHub for version control.",
+      "location": "Code Road 90, 09876 Code Country",
+      "date": "2024-01-25",
+      "image": "https://images.unsplash.com/photo-1630514969818-94aefc42ec47",
+      "isFeatured": false
+    }
+  }
+}
