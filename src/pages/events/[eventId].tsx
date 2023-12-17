@@ -1,14 +1,9 @@
 import EventSummary from '@/components/events/event-detail/EventSummary';
 import EventLogistics from '@/components/events/event-detail/EventLogistics';
 import EventContent from '@/components/events/event-detail/EventContent';
-import ErrorAlert from '@/components/ui/ErrorAlert';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import {
-  EventType,
-  getAllEvents,
-  getEventById,
-  getFeaturedEvents,
-} from '@/helpers/api-util';
+import { EventType, getEventById, getFeaturedEvents } from '@/helpers/api-util';
+import Head from 'next/head';
 
 type EventDetailPageProps = {
   event: EventType;
@@ -25,6 +20,10 @@ export default function EventDetailPage({ event }: EventDetailPageProps) {
 
   return (
     <>
+      <Head>
+        <title>{event.title}</title>
+        <meta name="description" content={event.description} />
+      </Head>
       <EventSummary title={event.title} />
       <EventLogistics
         address={event.location}

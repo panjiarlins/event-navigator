@@ -4,6 +4,7 @@ import Button from '@/components/ui/Button';
 import ErrorAlert from '@/components/ui/ErrorAlert';
 import { EventType, getFilteredEvents } from '@/helpers/api-util';
 import { GetServerSideProps } from 'next';
+import Head from 'next/head';
 
 type FilteredEventsPageProps = {
   events: EventType[];
@@ -43,6 +44,13 @@ export default function FilteredEventsPage({
 
   return (
     <>
+      <Head>
+        <title>Filtered Events</title>
+        <meta
+          name="description"
+          content={`All events for ${date.month}/${date.year}`}
+        />
+      </Head>
       <ResultsTitle date={new Date(date.year, date.month - 1)} />
       <EventList items={events} />
     </>

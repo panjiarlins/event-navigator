@@ -4,6 +4,7 @@ import EventList from '@/components/events/EventList';
 import EventSearch from '@/components/events/EventSearch';
 import { GetStaticProps } from 'next';
 import { EventType } from '@/helpers/api-util';
+import Head from 'next/head';
 
 type EventsPageProps = {
   events: EventType[];
@@ -19,6 +20,13 @@ export default function EventsPage({ events }: EventsPageProps) {
 
   return (
     <>
+      <Head>
+        <title>All Events</title>
+        <meta
+          name="description"
+          content="Find a lot of great events that allow you to evolve...."
+        />
+      </Head>
       <EventSearch onSearch={findEventsHandler} />
       <EventList items={events} />
     </>
