@@ -4,6 +4,7 @@ import Button from '../ui/Button';
 import CalendarIcon from '../icons/CalendarIcon';
 import MapPinIcon from '../icons/MapPinIcon';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
+import Image from 'next/image';
 
 type EventItemProps = {
   item: ReturnType<typeof getFeaturedEvents>[number];
@@ -22,8 +23,15 @@ function EventItem({
 
   return (
     <li className={classes.item}>
-      {/* <Image loader={() => image} src={image} alt={title} fill /> */}
-      <img src={image} alt={title} />
+      <Image
+        src={image}
+        alt={title}
+        width={0}
+        height={0}
+        unoptimized
+        priority
+        className="w-full h-auto"
+      />
       <div className={classes.content}>
         <div className={classes.summary}>
           <h2 className="text-lg font-bold">{title}</h2>

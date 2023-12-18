@@ -2,6 +2,7 @@ import CalendarIcon from '@/components/icons/CalendarIcon';
 import MapPinIcon from '@/components/icons/MapPinIcon';
 import LogisticsItem from './LogisticsItem';
 import classes from './EventLogistics.module.css';
+import Image from 'next/image';
 
 type EventLogisticsProps = {
   date: string;
@@ -27,7 +28,13 @@ function EventLogistics({
   return (
     <section className={classes.logistics}>
       <div className={classes.image}>
-        <img src={image} alt={imageAlt} />
+        <Image
+          src={image}
+          alt={imageAlt}
+          width={300}
+          height={300}
+          unoptimized
+        />
       </div>
       <ul className={classes.list}>
         <LogisticsItem icon={CalendarIcon}>
